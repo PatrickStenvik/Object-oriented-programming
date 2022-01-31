@@ -17,3 +17,6 @@ elif (x <= 120):
     print("arvosanasi on: 5")
 else:
     print("Error: exercise points cannot be < 0 or > 120.")
+#exerscise 2-3.py
+#Patrick Stenvik
+#gives an average grade based on the points
