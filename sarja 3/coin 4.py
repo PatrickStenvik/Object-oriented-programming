@@ -30,7 +30,7 @@ class Coin:
     def get_sideup(self):
         return self.__sideup
 
-
+#antaa kolikolle satunnaisen arvon jolla määritellään mitä valuuttaa se on
 class Coin2:
 
     def __init__(self):
@@ -54,6 +54,7 @@ class Coin2:
     def get_money(self):
         return self.money
 
+#määrittää minkä värinen noppa on
 class DiceColor:
     def __init__(self):
         self.__color = 'Red'
@@ -79,6 +80,7 @@ class DiceColor:
     def get_color(self):
         return self.__color
 
+#sattuman varaisesti antaa nopalle heitetyn arvon
 class DiceNum:
     def __init__(self):
         self.__num = 1

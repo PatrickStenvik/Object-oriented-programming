@@ -30,7 +30,7 @@ class Coin:
     def get_sideup(self):
         return self.__sideup
 
-
+#antaa kolikolle satunnaisen arvon jolla määritellään mitä valuuttaa se on
 class Coin2:
 
     def __init__(self):
