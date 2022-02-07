@@ -54,35 +54,52 @@ class Coin2:
     def get_money(self):
         return self.money
 
-# Main function definition
-class Dice:
+class DiceColor:
     def __init__(self):
-        self.__sideup = 'Heads'
+        self.__color = 'Red'
 
 
-    def toss_the_coin(self):
-        toss = 0
-        toss = random.randint(0,4)
+    def dice_color(self):
+        toss = 1
+        toss = random.randint(1,6)
 
-        if toss == 0:
-            self.__sideup = 'Heads'
-        elif toss == 1:
-            self.__sideup = 'Tails'
+        if toss == 1:
+            self.__color = 'Red'
         elif toss == 2:
-            self.__sideup = 'coin drops on the ground and disappearson a rabbit hole'
+            self.__color = 'Blue'
         elif toss == 3:
-            self.__sideup = 'coin defies gravity and gets lost on a wormhole in space'
+            self.__color = 'White'
+        elif toss == 4:
+            self.__color = 'Yellow'
+        elif toss == 5:
+            self.__color = 'Black'
         else:
-            self.__sideup = 'Upright'
+            self.__color = 'Magenda'
 
-    def get_sideup(self):
-        return self.__sideup
+    def get_color(self):
+        return self.__color
+
+class DiceNum:
+    def __init__(self):
+        self.__num = 1
+
+
+    def dice_num(self):
+        self.__num = random.randint(1,6)
+
+    def get_num(self):
+        return self.__num
+
+# Main function definition
 
 def main():
 
     my_coin = Coin()
     my_cointype = Coin2()
+    color = DiceColor()
+    num = DiceNum()
 
+    print("You rolled a die it's color is:", color.get_color(), " and it rolled a ", num.get_num())
     print("now throwing a", my_cointype.get_money())
     print("This side is up:", my_coin.get_sideup())
 
