@@ -1,0 +1,4 @@
+# File:         tehtävä 3.py
+# Created by:  Roope Iljanko & Patrick Stenvik
+# Description:  Rolls 3 dice
+Def Main:
