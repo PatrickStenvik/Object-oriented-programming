@@ -11,10 +11,7 @@ class DiceValue:
         self.dvalue = 0
 
     def droll(self):
-        self.roll = r.randint(0, 6)
-        
-        self.roll = self.roll + r.randint(0, 6)
-        
+        self.roll = 0
         self.roll = self.roll + r.randint(0, 6)
         self.dvalue = self.roll
         
@@ -28,19 +25,26 @@ class DiceValue:
 
 
 def main():
+    x=0
+    y=0
+    val = input("Heitettyjen noppien määrä: ")
 
     my_dice = DiceValue()
 
-    print("you rolled a: ", my_dice.droll())
-    p1 = my_dice.droll
-    my_dice.droll()
-
-    print("your opponent  rolled a: ", my_dice.droll())
-    p2 = my_dice.droll
+    while(x!=val):
+        print("you rolled a: ", my_dice.droll())
+        p1 = my_dice.droll + p1
+    while(y!=val):
+        my_dice.droll()
+        print("your opponent  rolled a: ", my_dice.droll())
+    p2 = my_dice.droll + p2
     if(p1>p2):
         print("Voitit")
-    else:
+    elif(p1<p2):
         print("hävisit")
+    else:
+        print("tasapeli aloitetaan uudestaan")
+        main()
 
 
 main()
